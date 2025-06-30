@@ -1,0 +1,38 @@
+/* static/global.css */
+:root {
+  /* — overall page — */
+  --bg:    #ffffff;
+  --fg:    #1a1a1a;
+  /* — accent / highlights — */
+  --accent: #2e8b57;
+  /* — per-day backgrounds — */
+  --day-0: #FFF4E6; /* Mon */
+  --day-1: #FFE8CC; /* Tue */
+  --day-2: #FFD4A3; /* Wed */
+  --day-3: #F4C2A1; /* Thu */
+  --day-4: #E8B4A0; /* Fri */
+  --day-5: #D4A29C; /* Sat */
+  --day-6: #C8958F; /* Sun */
+  --day-7: #B8857A; /* Someday */
+}
+
+html.dark {
+  --bg:    #121212;
+  --fg:    #e0e0e0;
+  --accent: #66cdaa;
+  --day-0: #2b2b2b;
+  --day-1: #333333;
+  --day-2: #3a3a3a;
+  --day-3: #424242;
+  --day-4: #4a4a4a;
+  --day-5: #525252;
+  --day-6: #5a5a5a;
+  --day-7: #626262;
+}
+
+/* base styles */
+body {
+  background-color: var(--bg);
+  color:            var(--fg);
+}
+

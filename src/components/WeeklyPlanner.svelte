@@ -396,7 +396,7 @@
 					<Accordion.Header class="flex">
 						<Accordion.Trigger
 							class="flex flex-1 items-center justify-between p-10 font-[Megrim] text-4xl transition-all hover:brightness-95"
-							style={`background-color: ${day.dayBgColor}; color: #333333;`}
+							style={`background-color: var(--day-${dayIndex}); color: var(--fg);`}
 						>
 							{day.name}
 						</Accordion.Trigger>
@@ -404,7 +404,7 @@
 
 					<Accordion.Content
 						class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm transition-all"
-						style={`background-color: ${day.dayBgColor}; color: #333333;`}
+						style={`background-color: var(--day-${dayIndex}); color: var(--fg);`}
 					>
 						<div class="p-4 pt-2">
 							<!-- Input to add a new task -->

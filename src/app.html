@@ -17,6 +17,17 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<meta name="apple-mobile-web-app-title" content="Your App Name">
 
+	<link rel="stylesheet" href="/global.css" />
+
+  	<script>
+    	  (function() {
+      	    const saved = localStorage.getItem('theme');
+      	    const dark = saved === 'dark'
+              || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            document.documentElement.classList.toggle('dark', dark);
+          })();
+  	</script>
+
 	%sveltekit.head%
 </head>
 
